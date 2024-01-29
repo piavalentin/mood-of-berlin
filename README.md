@@ -11,7 +11,7 @@ Node script which fetches the latest image of the sky in Berlin, detects the col
 ## Prerequisites
 
 - [Node](https://nodejs.org/en/)
-- [yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) or [npm](https://www.npmjs.com/get-npm)
+- [yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) (or [npm](https://www.npmjs.com/get-npm))
 - [Firestore Project](https://firebase.google.com/docs/firestore)
 
 ## Initial set-up and installation
@@ -24,10 +24,13 @@ Node script which fetches the latest image of the sky in Berlin, detects the col
 
 In the project root, create an `.env` file or make a copy of the `.env.example` file, containing the following environment variables with the required values:
 
+Depending on rules for Firestore project choose a. `firebase-openreadwrite.js` or b. `firebase.js`. Update `.env` for both accordingly:
+
 ```
 SOURCE_IMAGE=
 LOCATION=
 DB_PATH=
+FS_ADMIN=
 FS_APIKEY=
 FS_AUTHDOMAIN=
 FS_PROJECTID=
