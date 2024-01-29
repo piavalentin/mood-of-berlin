@@ -2,7 +2,8 @@
 
 ### Based on Color of Berlin, a Twitter Bot by [@laurendorman](github.com/laurendorman) 🐦
 
---- 
+---
+
 Node script which fetches the latest image of the sky in Berlin, detects the color, logs and uploads it to a Firestore project.
 
 ---
